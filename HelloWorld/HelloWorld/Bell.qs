@@ -18,7 +18,7 @@
         }
     }
 
-	operation BellTest(count: InT, initial: Result) : (Int,Int)
+	operation BellTest(count: Int, initial: Result) : (Int,Int)
 	{
 		body
 		{
@@ -31,11 +31,11 @@
 					let res = M(qubits[0]);
 					if(res == One)
 					{
-						set numOnes = numOnes+1
+						set numOnes = numOnes + 1;
 					}
 				}
 			}
-			Set(Zero, qubits[0])
+			Set(Zero, qubits[0]);
 		}
 		return (count-numOnes, numOnes);
 	}
