@@ -11,7 +11,7 @@ namespace Quantum.HelloWorld
         {
             using (var sim = new QuantumSimulator())
             {
-                Result[] intials = new Result[]{Result.Zero, Result.One};
+                Result[] initials = new Result[] { Result.Zero, Result.One };
                 foreach (Result initial in initials)
                 {
                     var res = BellTest.Run(sim, 1000, initial).Result;
